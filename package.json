@@ -1,6 +1,6 @@
 {
   "name": "ci_node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Verificación y generación de cedula de identidad uruguaya",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/francocorreasosa/ci_node/issues"
   },
-  "homepage": "https://github.com/francocorreasosa/ci_node#readme"
+  "homepage": "https://github.com/francocorreasosa/ci_node#readme",
+  "tonicExampleFilename": "example.js"
 }
