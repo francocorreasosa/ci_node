@@ -1,6 +1,6 @@
 {
   "name": "ci_node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verificación y generación de cedula de identidad uruguaya",
   "main": "index.js",
   "scripts": {
