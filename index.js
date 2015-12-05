@@ -1,3 +1,4 @@
+
 function validation_digit(ci){
   var a = 0;
   var i = 0;
@@ -31,4 +32,11 @@ function random_ci(){
 
 function clean_ci(ci){
   return ci.replace(/\D/g, '');
+}
+
+module.exports = {
+  validation_digit: validation_digit,
+  validate_ci: validate_ci,
+  random_ci: random_ci,
+  clean_ci: clean_ci
 }
