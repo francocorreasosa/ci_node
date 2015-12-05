@@ -1,8 +1,8 @@
 {
   "name": "ci_node",
   "version": "1.0.0",
-  "description": "Para usarlo en tu aplicación web incluir `ci.js`:",
-  "main": "app.js",
+  "description": "Verificación y generación de cedula de identidad uruguaya",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
