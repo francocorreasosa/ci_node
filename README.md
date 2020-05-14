@@ -41,3 +41,12 @@ generateValidationDigit(1111111);
 ## TODO
 - [ ]  Deno support 
 - [ ]  Publish docs somewhere (maybe not, module is tiny)
+
+## Ops TODO
+- [ ] Create a header img
+- [ ] Use a `postinstall` message in the `ci_node` library to announce this one.
+- [ ] Move this to itss own repo.
+- [ ] Use a banner in the `ci_node` lib readme linking to this.
+
+## Credits
+Shout out to @picandocodigo for the original Ruby and Browser JS code.
