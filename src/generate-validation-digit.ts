@@ -1,7 +1,7 @@
 /**
  * Given a valid uruguayan identification number,
  * generates it's validation/verification digit.
- * 
+ *
  * @example generateValidationDigit('1111111') => 1
  *
  * @param idNumber The first 6 or 7 digits of the identification number.

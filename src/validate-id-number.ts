@@ -12,7 +12,7 @@ export const validateIdentificationNumber: (
   const ci = typeof idNumber === 'number' ? idNumber.toString() : idNumber;
 
   if (ci.length < 7 || ci.length > 8) {
-      return false;
+    return false;
   }
 
   const cleanNumber = cleanIdNumber(ci);

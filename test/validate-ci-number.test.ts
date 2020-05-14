@@ -19,7 +19,7 @@ describe('validateIdentificationNumber()', () => {
       it('should tell a number with an valid validation digit is valid - 8 char', () => {
         expect(validateIdentificationNumber('11111111')).toBe(true);
       });
-      
+
       it('should tell a number with an invalid validation digit is invalid - 7 char', () => {
         expect(validateIdentificationNumber('1234567')).toBe(false);
       });
