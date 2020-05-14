@@ -11,10 +11,8 @@ export const generateValidationDigit: (
 ) => number = idNumber => {
   let ci = typeof idNumber === 'number' ? idNumber.toString() : idNumber;
 
-  if (ci.length <= 6) {
-    for (let i = ci.length; i < 7; i++) {
-      ci = '0' + ci;
-    }
+  for (let i = 0; i < 7 - ci.length; i++) {
+    ci = '0' + ci;
   }
 
   return safeGenerateValidationDigit(ci);
@@ -25,7 +23,7 @@ const safeGenerateValidationDigit: (idNumber: string) => number = idNumber => {
   let sum = 0;
 
   for (let i = 0; i < 7; i++) {
-    sum += (parseInt('2987634'[i]) * parseInt(ci[i])) % 10;
+    sum += parseInt('2987634'[i]) * parseInt(ci[i]);
   }
 
   if (sum % 10 === 0) {
