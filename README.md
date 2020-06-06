@@ -1,21 +1,52 @@
-# Validador de c&eacute;dulas de identidad
+<h2 align="center">ciuy</h2>
+<p align="center">Handy module to generate and validate uruguayan identification numbers</p>
 
-Puedes instalarlo con NPM haciendo:
+## Usage
 
-```html
-[sudo] npm install ci_node
+### Validate an user-provided ID number
+
+```js
+import { validateIdentificationNumber } from 'ciuy';
+
+const valid = '11111111';
+validateIdentificationNumber(valid);
+// => true
+
+const invalid = '11111112';
+validateIdentificationNumber(invalid);
+// => false
 ```
 
-Funciones:
-```javascript
-var ci_node = require("ci_node");
-var ci = "1.111.111";
-ci_node.validation_digit(ci); // => '1' - Obtiene el dígito verificador de una cédula dada
+### Generate a random ID number (for testing)
 
-ci = "1.111.111-1"
-ci_node.validate_ci(ci);      // => true/false - Valida una cédula completa
+```js
+import { generateRandomNumber } from 'ciuy';
 
-ci_node.random_ci();          // => 35330781 - Obtiene un número de cédula válido al azar
+generateRandomNumber();
+// => "72289541"
+
+generateRandomNumber();
+// => "88547325"
 ```
 
-Basado en la libreria original por @picandocodigo
+### Complete the validation digit given an ID number
+
+```js
+import { generateValidationDigit } from 'ciuy';
+
+generateValidationDigit(1111111);
+// => 1
+```
+
+## TODO
+- [ ]  Deno support 
+- [ ]  Publish docs somewhere (maybe not, module is tiny)
+
+## Ops TODO
+- [ ] Create a header img
+- [ ] Use a `postinstall` message in the `ci_node` library to announce this one.
+- [ ] Move this to itss own repo.
+- [ ] Use a banner in the `ci_node` lib readme linking to this.
+
+## Credits
+Shout out to @picandocodigo for the original Ruby and Browser JS code.
